@@ -1,0 +1,35 @@
+form {
+	width: 300px;
+	margin: 0px auto;
+}
+
+label {
+	display: block;
+	margin: 5px 0 5px 20px;
+	font: 18px sans-serif;
+	color: #0020C2
+}
+
+input {
+	width: 250px;
+	margin: 0 0 0 20px;
+}
+
+textarea {
+	width: 250px;
+	margin: 0 0 0 20px;
+}
+
+fieldset{
+	border:none;
+	background-color: #F6F6F6;
+	padding: 0 0 20px 0;
+}
+
+.labelone {
+	margin-top: 10px;
+}
+
+.btn {
+	width: 125px;
+}
