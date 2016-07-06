@@ -14,7 +14,7 @@ function fChange() {
     alert("You have to enter a number for it to work first!");
     return;
   } else if ("fTemp") {
-    document.getElementById("celsiusresult").innerHTML = input.value = ("The temperature is " + ((text - 32)*(5/9)) + " Degrees Celsius.");
+    document.getElementById("result").innerHTML = input.value = ("The temperature is " + ((text - 32)*(5/9)) + " Degrees Celsius.");
     cTemp.value="";
     fTemp.value="";
   }
@@ -28,7 +28,7 @@ function cChange() {
     alert("You have to enter in a number for it to work first!");
     return;
   } else if ("cTemp") {
-   document.getElementById("fahrenheitresult").innerHTML = input.value = ("The temperature is " + ((text * (9/5)) + 32) + " Degrees Fahrenheit.");
+   document.getElementById("result").innerHTML = input.value = ("The temperature is " + ((text * (9/5)) + 32) + " Degrees Fahrenheit.");
    cTemp.value="";
    fTemp.value="";
   }
