@@ -2,22 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>The Temperature Converter!</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <title>Temperature Converter</title>
   </head>
   <body>
-    <fieldset>
-      <h1>The Temperature Converter!</h1>
-      <h2>Fahrenheit to Celsius</h2>
-        <label class="temp" for="text">Type in the temperature in Fahrenheit:</label>
-        <input id="fTemp" type="text" name="tempToChange"/>
-        <button type="button" onClick="fChange()">Submit</button>
-      <h2>Celsius to Fahrenheit</h2>
-        <label class="temp" for="text">Type in the temperature in Celsius:</label>
-        <input id="cTemp" type="text" name="tempToChange"/>
-        <button type="button" onClick="cChange()">Submit</button>
-    </fieldset>
-    <p id="result"></p>
+    <div class="container">
+      <div class="row">
+        <div id="thermometer" class="three columns">
+          <img src="images/thermometer.jpg" alt="A thermometer">
+        </div>
+        <div class="nine columns">
+          <fieldset>
+            <div class="row">
+              <div class="twelve colums">
+                <h2>The Temperature Converter!</h2>
+                <h3>Fahrenheit to Celsius</h3>
+              </div>
+            </div>
+            <label class="temp" for="text">Type in the temperature in Fahrenheit:</label>
+            <input id="fTemp" type="text" name="tempToChange" placeholder="Temp in Fahrenheit"/>
+            <button type="button" onClick="fChange()">Submit</button>
+            <h3>Celsius to Fahrenheit</h3>
+            <label class="temp" for="text">Type in the temperature in Celsius:</label>
+            <input id="cTemp" type="text" name="tempToChange" placeholder="Temp in Celsius"/>
+            <button type="button" onClick="cChange()">Submit</button>
+            <p id="result"></p>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="scripts.js"></script>
 </html>
